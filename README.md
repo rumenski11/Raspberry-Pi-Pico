@@ -1,4 +1,4 @@
-# About Raspberry Pi Pico
+## About Raspberry Pi Pico
 Raspberry Pi Pico is a low-cost, high-performance microcontroller board with flexible digital interfaces. Key features include:
 
 - RP2040 microcontroller chip designed by Raspberry Pi in the United Kingdom
