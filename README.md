@@ -40,5 +40,5 @@ Key features:
 
 ## Embedded sensors for RP2040
 - MCP9701A - Digitial temperature and humidity sensor
-- DHT11 - Analog temperatuure sensor
+- DHT11 - Analog temperature sensor
 - WEA012864DLPP3N00003 - OLED display
