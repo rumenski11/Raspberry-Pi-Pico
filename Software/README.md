@@ -25,3 +25,8 @@ It uses a capacitive humidity sensor and a thermistor to measure the surrounding
 - [Adafruit_GFX](https://github.com/adafruit/Adafruit-GFX-Library?utm_source=platformio&utm_medium=piohome)
 - [Adafruit_SSD1306](https://github.com/adafruit/Adafruit_SSD1306?utm_source=platformio&utm_medium=piohome)
 - [Adafruit BusIO](https://github.com/adafruit/Adafruit_BusIO?utm_source=platformio&utm_medium=piohome)
+
+# Used Software
+- [Visual Studio Code](https://code.visualstudio.com/) version 1.81.0
+- [PlatformIO](https://platformio.org/) Core Version 6.1.10
+- [Arduino framework](https://docs.platformio.org/en/stable/frameworks/arduino.html) - Allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.

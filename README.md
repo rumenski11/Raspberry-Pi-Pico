@@ -14,7 +14,7 @@ Raspberry Pi Pico is a low-cost, high-performance microcontroller board with fle
 - Accelerated floating-point libraries on-chip
 - 8 × Programmable I/O (PIO) state machines for custom peripheral support
 
-https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf[Raspberry Pi Pico Datasheet]:: An RP2040-based microcontroller board
+[Raspberry Pi Pico Datasheet](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf)
 
 # About RP2040
 RP2040 is manufactured on a modern 40nm process node, delivering high performance, low dynamic power
@@ -42,7 +42,7 @@ Key features:
 # Software
 - [Visual Studio Code](https://code.visualstudio.com/) version 1.81.0
 - [PlatformIO](https://platformio.org/) Core Version 6.1.10
-- Arduino framework
+- [Arduino framework](https://docs.platformio.org/en/stable/frameworks/arduino.html) - Allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences.
 
 # Embedded sensors for RP2040
 - MCP9701A - Digitial temperature and humidity sensor
