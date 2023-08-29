@@ -1,4 +1,4 @@
-# RP2040 - MCP9701A
+## RP2040 - MCP9701A
 [MCP9701A](https://store.comet.bg/Catalogue/Product/5003942/) sensors with Linear Active Thermistor Integrated Circuit
 (IC) comprise a family of analog temperature sensors that convert temperature to analog voltage.
 The low-cost, low-power sensors feature an accuracy of ±1°C from +20°C to +70°C (MCP9700B), ±2°C from
