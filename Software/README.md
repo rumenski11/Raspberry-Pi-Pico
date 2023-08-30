@@ -1,5 +1,5 @@
 ## RP2040 - Analog sensor - MCP9701
-[MCP9701](https://store.comet.bg/Catalogue/Product/5003942/) family are sensors with Linear Active Thermistor Integrated Circuit
+[MCP9701](https://store.comet.bg/Catalogue/Product/5003942/) family of sensors with Linear Active Thermistor Integrated Circuit
 (IC) comprise a family of analog temperature sensors that convert temperature to analog voltage.
 The low-cost, low-power sensors feature an accuracy of ±1°C from +20°C to +70°C (MCP9700B), ±2°C from
 0°C to +70°C (MCP9700A/9701A) and ±4°C from 0°C to +70°C (MCP9700/9701) while consuming 6 µA (typical) of operating current.
@@ -14,7 +14,7 @@ It uses a capacitive humidity sensor and a thermistor to measure the surrounding
 - [DHT sensor library](https://github.com/adafruit/DHT-sensor-library?utm_source=platformio&utm_medium=piohome)
 
 ## RP2040 - OLED - WEA012864D
-[WEA012864D](https://store.comet.bg/download-file.php?id=21553) is a Passive-Matrix OLED 128x64 dots
+[WEA012864DLPP3N00003](https://store.comet.bg/download-file.php?id=21559) is a Graphical Passive-Matrix OLED 128x64 dots
 
 ### Libraries used for OLED
 - SPI - This library is bundled with every Arduino platform
