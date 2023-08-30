@@ -1,5 +1,5 @@
 ## About Raspberry Pi Pico
-Raspberry Pi Pico is a low-cost, high-performance microcontroller board with flexible digital interfaces. Key features include:
+[Raspberry Pi Pico](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf) is a low-cost, high-performance microcontroller board with flexible digital interfaces. Key features include:
 
 - RP2040 microcontroller chip designed by Raspberry Pi in the United Kingdom
 - Dual-core Arm Cortex M0+ processor, flexible clock running up to 133 MHz
@@ -13,8 +13,6 @@ Raspberry Pi Pico is a low-cost, high-performance microcontroller board with fle
 - Temperature sensor
 - Accelerated floating-point libraries on-chip
 - 8 × Programmable I/O (PIO) state machines for custom peripheral support
-
-[Raspberry Pi Pico Datasheet](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf)
 
 ## About RP2040
 [RP2040](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf) is manufactured on a modern 40nm process node, delivering high performance, low dynamic power
