@@ -1,6 +1,6 @@
-/************************
+/**************************************************************************
  OLED Test program
- ************************/
+ **************************************************************************/
 
 /****Included libraries****/
 #include <SPI.h>
@@ -18,7 +18,7 @@
 // The pins for I2C are defined by the Wire-library.
 //For raspberry pi pico the default pins are -> SDA: GP4; SCL: GP5
 #define OLED_RESET     -1 // Reset pin # (or -1 if sharing Arduino reset pin)
-#define SCREEN_ADDRESS 0x3C ///< See datasheet for Address
+#define SCREEN_ADDRESS 0x3C ///< See datasheet for Address; 0x3D for 128x64, 0x3C for 128x32
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 #define NUMFLAKES     10 // Number of snowflakes in the animation example
@@ -43,7 +43,6 @@ static const unsigned char PROGMEM logo_bmp[] =
   0b01110000, 0b01110000,
   0b00000000, 0b00110000 };
 
-//Function prototipes
 void testdrawline();
 void testdrawrect(void);
 void testfillrect(void);
@@ -65,7 +64,7 @@ void setup() {
   // SSD1306_SWITCHCAPVCC = generate display voltage from 3.3V internally
   if(!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
     Serial.println(F("SSD1306 allocation failed"));
-    for(;;); //Loop forever
+    for(;;); // Don't proceed, loop forever
   }
 
   // Show initial display buffer contents on the screen --
@@ -83,23 +82,35 @@ void setup() {
   // drawing commands to make them visible on screen!
   display.display();
   delay(2000);
-  /* display.display() is NOT necessary after every single drawing command, 
-     unless that's what you want...rather, you can batch up a bunch of      
-     drawing operations and then update the screen all at once by calling   
-     display.display(). These examples demonstrate both approaches...      */
+  // display.display() is NOT necessary after every single drawing command, //
+  // unless that's what you want...rather, you can batch up a bunch of      //
+  // drawing operations and then update the screen all at once by calling   //
+  // display.display(). These examples demonstrate both approaches...       //
 
   testdrawline();      // Draw many lines
+
   testdrawrect();      // Draw rectangles (outlines)
+
   testfillrect();      // Draw rectangles (filled)
+
   testdrawcircle();    // Draw circles (outlines)
+
   testfillcircle();    // Draw circles (filled)
+
   testdrawroundrect(); // Draw rounded rectangles (outlines)
+
   testfillroundrect(); // Draw rounded rectangles (filled)
+
   testdrawtriangle();  // Draw triangles (outlines)
+
   testfilltriangle();  // Draw triangles (filled)
+
   testdrawchar();      // Draw characters of the default font
+
   testdrawstyles();    // Draw 'stylized' characters
+
   testscrolltext();    // Draw scrolling text
+
   testdrawbitmap();    // Draw a small bitmap image
 
   // Invert and restore display, pausing in-between
@@ -114,7 +125,6 @@ void setup() {
 void loop() {
 }
 
-//Functiones
 void testdrawline() {
   int16_t i;
 
@@ -122,7 +132,7 @@ void testdrawline() {
 
   for(i=0; i<display.width(); i+=4) {
     display.drawLine(0, 0, i, display.height()-1, SSD1306_WHITE);
-    display.display();    // Update screen with each newly-drawn line
+    display.display(); // Update screen with each newly-drawn line
     delay(1);
   }
   for(i=0; i<display.height(); i+=4) {
@@ -316,7 +326,7 @@ void testdrawstyles(void) {
 
   display.setTextSize(2);             // Draw 2X-scale text
   display.setTextColor(SSD1306_WHITE);
-  display.print(F("0x")); display.println(0xDEADBEEF, HEX);
+  display.print(F("0x")); display.println("Test");
 
   display.display();
   delay(2000);
